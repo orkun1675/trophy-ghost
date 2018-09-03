@@ -31,11 +31,11 @@ gulp.task('browserify', () => {
   .pipe(gulp.dest('./assets/js'));
 });
 
-gulp.task('build', ['sass', 'browserify']);
+gulp.task('build',  gulp.series('sass', 'browserify'));
 
 gulp.task('watch', () => {
-  gulp.watch('./src/scss/**/*.scss', ['sass']);
-  gulp.watch('./src/js/**/*.js', ['browserify']);
+  gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
+  gulp.watch('./src/js/**/*.js', gulp.series('browserify'));
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default',  gulp.series('build', 'watch'));
