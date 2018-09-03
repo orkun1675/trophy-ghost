@@ -9,7 +9,7 @@
     <header class="archives__header">
       <span>{{name}}</span>
     </header>
-    {{#get "posts" limit="all" filter="author:{{slug}}"}}
+    {{#get "posts" limit="all" filter="authors:{{slug}}"}}
       <div class="section-padding archives__container">
         {{#foreach posts}}
           <article class="card">

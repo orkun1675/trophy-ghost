@@ -600,3 +600,34 @@
     padding-right: 1em;
   }
 }
+
+/**
+* Required classes for Ghost 2
+*/
+.kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  width: 100vw;
+}
+
+.kg-gallery-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kg-gallery-image img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.post-full-content .kg-width-wide .kg-image {
+  max-width: 1040px;
+}
+
+.post-full-content .kg-width-full .kg-image {
+  max-width: 100vw;
+}
