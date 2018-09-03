@@ -1,9 +1,9 @@
 {
   "name": "trophy-ghost",
   "description": "Trophy is a blog theme for Ghost built using HTML, Sass, and JavaScript (no jQuery).",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "engines": {
-    "ghost": ">=1.0.0"
+    "ghost": ">=2.0.0"
   },
   "homepage": "http://thomasvaeth.com/trophy/",
   "scripts": {
@@ -20,19 +20,24 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.0",
-    "babelify": "^7.3.0",
-    "browserify": "^14.4.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^2.0.0"
   },
   "config": {
     "posts_per_page": 10
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thomasvaeth/trophy-ghost.git"
   }
 }
